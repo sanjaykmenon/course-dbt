@@ -16,7 +16,36 @@ sources:
       error_after: {count: 48, period: hour}
 
     tables:
-      - name: superheroes 
+      - name: events
         loaded_at_field: created_at
         description: >
-          Contains demographic information about each superhero
+          Contains event data across pages for orders
+    
+      - name: users
+        loaded_at_field: created_at
+        description: >
+          Contains user metadata
+      
+      - name: addresses
+        description: >
+          Contains address metadata
+    
+      - name: orders
+        loaded_at_field: created_at
+        description: >
+          Contains order metadata 
+      - name: products
+        description: >
+          Contains product metadata
+      
+      - name: order_items
+        description: >
+          Contains order metadata
+      
+      - name: promos
+        description: >
+          Contains promos metadata
+      
+      - name: superheroes
+        description: >
+          its all about the supes.
